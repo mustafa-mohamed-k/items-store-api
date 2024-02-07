@@ -10,6 +10,11 @@ namespace ItemStoreAPI.Mappings
         {
             CreateMap<Item, ItemModel>();
             CreateMap<ItemModel, Item>();
+
+            CreateMap<Item, CreateItemModel>();
+            CreateMap<CreateItemModel, Item>();
+
+            CreateMap<UpdateItemModel,  Item>();
         }
     }
 }

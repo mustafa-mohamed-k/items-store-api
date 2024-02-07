@@ -15,8 +15,9 @@ namespace ItemStore.Data
 
         public Item AddItem(Item item)
         {
-            // assign the item an id
+            // assign the item an id and set the date created to today
             item.Id = _items.Count + 1;
+            item.DateCreated = DateTime.Now;
 
             _items.Add(item);
             return item;
