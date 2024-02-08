@@ -11,6 +11,7 @@ namespace ItemStore.Service
 
         IEnumerable<Item> Search(string name);
 
+        Task<List<long>> Factorial();
 
         Item? Get(int id);
 
