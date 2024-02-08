@@ -11,6 +11,7 @@ namespace ItemStore.Data
 
         IQueryable<Item> Search(string name);
 
+        Task<List<long>> Factorial();
 
         Item? Get(int id);
 

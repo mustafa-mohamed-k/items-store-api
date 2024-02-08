@@ -42,5 +42,10 @@ namespace ItemStore.Service
         {
             return itemsRepository.Update(item);
         }
+
+        public async Task<List<long>> Factorial()
+        {
+            return await itemsRepository.Factorial();
+        }
     }
 }

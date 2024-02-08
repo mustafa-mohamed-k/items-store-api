@@ -74,5 +74,12 @@ namespace ItemStoreAPI.Controllers
                 return NotFound();
             }
         }
+
+        [HttpGet("factorial")]
+        public async Task<ActionResult<List<long>>> Factorial()
+        {
+            var factorials = await itemsService.Factorial();
+            return Ok(factorials);
+        }
     }
 }
